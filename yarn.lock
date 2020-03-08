@@ -905,6 +905,14 @@
   resolved "https://registry.yarnpkg.com/@next/polyfill-nomodule/-/polyfill-nomodule-9.2.2.tgz#2687d5b64ba053b247700f057f083dfd392ee52e"
   integrity sha512-J51QpynN0AxQ0saWkxgpr0JxWqSJFCBOOeQpbyn5hlgxjrcXR9dQ59tN677vbq2wJ8idLn898vZFaRmQsLq13A==
 
+"@researchgate/react-intersection-observer@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@researchgate/react-intersection-observer/-/react-intersection-observer-1.0.5.tgz#085f104d1f0b21eecc5ef11f30cc5a2ec4426f38"
+  integrity sha512-AR2afu0MM8XuKn05OyT6E4wsxD0xM2521syxQ2mFO3201OE+L0z3BNdxXzlJhxvNLk0+caY3jxKSUObG8DoLCg==
+  dependencies:
+    invariant "^2.2.4"
+    prop-types "^15.7.2"
+
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.8.5.tgz#51b1c5fe6576a34953bf4b253df9f0d490d9e359"
@@ -3045,7 +3053,7 @@ inherits@2.0.3:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
-invariant@^2.2.2:
+invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
@@ -4865,10 +4873,10 @@ rc-switch@^1.9.0:
     prop-types "^15.5.6"
     react-lifecycles-compat "^3.0.4"
 
-react-bricks@^1.0.41:
-  version "1.0.41"
-  resolved "https://registry.yarnpkg.com/react-bricks/-/react-bricks-1.0.41.tgz#aef8537296adfd8f8c74ffe4f65108b1ff0da651"
-  integrity sha512-TyOiVeFmV+UpZi+SkCfKb2nXQb2N6P1F1t6q91G6tW3zZnBmhWrvUjWOah4AJxUarMrf/aqI0Kx3k5jVOg6xiw==
+react-bricks@^1.0.42:
+  version "1.0.42"
+  resolved "https://registry.yarnpkg.com/react-bricks/-/react-bricks-1.0.42.tgz#2fab2cac2b4c8b29082185731e69a4af8c4d0dda"
+  integrity sha512-3x+c7LRR7Qp2tW7SbQKkT3HMOVWanyWFGwXHM6tO4aPHVHPB3FTh8sJHn3q+YBfKgosmxbco3Q2CID2pWPzibQ==
   dependencies:
     classnames "^2.2.6"
     cogo-toast "^4.2.3"
@@ -4880,9 +4888,9 @@ react-bricks@^1.0.41:
     react-copy-to-clipboard "^5.0.2"
     react-dropzone "^10.1.10"
     react-icons "^3.8.0"
-    react-lazy-progressive-image "^1.5.5"
     react-loader-spinner "^3.1.5"
-    react-query "1.0.10"
+    react-progressive-graceful-image "^0.6.11"
+    react-query "^1.0.10"
     riek "^1.1.0"
     slate "^0.47.9"
     slate-react "^0.22.10"
@@ -4942,13 +4950,6 @@ react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.0.tgz#0f37c3613c34fe6b37cd7f763a0d6293ab15c527"
   integrity sha512-GFMtL0vHkiBv9HluwNZTggSn/sCyEt9n02aM0dSAjGGyqyNlAyftYm4phPxdvCigG15JreC5biwxCgTAJZ7yAA==
 
-react-lazy-progressive-image@^1.5.5:
-  version "1.5.5"
-  resolved "https://registry.yarnpkg.com/react-lazy-progressive-image/-/react-lazy-progressive-image-1.5.5.tgz#86fd6c35c73f56440ac40c6273712ecc3223674d"
-  integrity sha512-s4lcvHElRElEXyajtlr+j8LKaBmcYbzRcLmyjQrtIe5VYV+5+nHN9POzmc1OoDS2EiAc1x+qGMhnV2LgkYgEPw==
-  dependencies:
-    react-visibility-sensor "^5.1.1"
-
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
@@ -4962,17 +4963,17 @@ react-loader-spinner@^3.1.5:
     babel-runtime "^6.26.0"
     prop-types "^15.6.2"
 
-react-query@1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/react-query/-/react-query-1.0.10.tgz#439311ce6a159637f8243cf9669c3ad1e38e9987"
-  integrity sha512-51UQljqzd9/PrfFy6RQCWdK+MS8kZr/ncLSwWmlzVJQbRPOZlAXXETiapXAsp66FKjYVOHkpf0s4KdABMNRdZA==
-
-react-visibility-sensor@^5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/react-visibility-sensor/-/react-visibility-sensor-5.1.1.tgz#5238380960d3a0b2be0b7faddff38541e337f5a9"
-  integrity sha512-cTUHqIK+zDYpeK19rzW6zF9YfT4486TIgizZW53wEZ+/GPBbK7cNS0EHyJVyHYacwFEvvHLEKfgJndbemWhB/w==
+react-progressive-graceful-image@^0.6.11:
+  version "0.6.11"
+  resolved "https://registry.yarnpkg.com/react-progressive-graceful-image/-/react-progressive-graceful-image-0.6.11.tgz#f6fb86c29f107720b642ec8231675a4e4b421fc3"
+  integrity sha512-Tni4AJjfk2fko5HvacWhnzwUesnLPHQU0GOnGjB8rM0jO8SRlVN8XIGilOZanl4MLuLkUJqzguGeFaQMb4y+qQ==
   dependencies:
-    prop-types "^15.7.2"
+    "@researchgate/react-intersection-observer" "^1.0.5"
+
+react-query@^1.0.10:
+  version "1.0.22"
+  resolved "https://registry.yarnpkg.com/react-query/-/react-query-1.0.22.tgz#a48f3e616015f7369a3342b350c2b64b9ca6580e"
+  integrity sha512-xJVK/c6lRZR6xi6sZrBnroZDrYAdQVVGSiwNONQdBrV3WEmIAJaSse5D8H+UW1BNdceNN036OnSxq9s3hRtClQ==
 
 react@16.13.0:
   version "16.13.0"
