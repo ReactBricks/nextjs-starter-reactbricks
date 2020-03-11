@@ -20,9 +20,9 @@ const Home = ({ page }) => {
   )
 }
 
-export default Home
-
 export async function getStaticProps() {
   const page = await fetchPage('home', config.apiKey)
   return { props: { page } }
 }
+
+export default Home
