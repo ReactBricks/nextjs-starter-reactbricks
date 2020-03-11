@@ -12,7 +12,7 @@ const Header = () => (
             <img src="/reactbricks-icon.svg" alt="React Bricks" />
             <img
               src="nextjs.svg"
-              style={{ marginLeft: '1rem' }}
+              style={{ marginLeft: '1rem', width: 65 }}
               alt="Next.js"
             />
           </div>
