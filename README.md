@@ -4,10 +4,19 @@ Kick-start your project with this boilerplate for a complete Next.js website bas
 
 ## 🚀 Quick start
 
+We suggest that you use the CLI and choose this starter.  
+In this way you will have the credentials already set up in a `.env.local` file:
+
 ```bash
-git clone your-project https://github.com/reactbricks/nextjs-starter-reactbricks
+npx create-reactbricks-app
+```
+
+Otherwise you can directly clone this repo:
+
+```bash
+git clone https://github.com/reactbricks/nextjs-starter-reactbricks your-project
 ```
 
 ## 📖 Documentation
 
-Please, read our documentation at [Reactbricks.com](https://reactbricks.com/docs).
+Please, read our documentation at [Reactbricks.com](https://reactbricks.com).
