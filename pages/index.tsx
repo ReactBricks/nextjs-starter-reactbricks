@@ -10,9 +10,9 @@ import Head from 'next/head'
 import { GetStaticProps } from 'next'
 
 import config from '../react-bricks/config'
-import Layout from '../components/Layout_'
-import ErrorNoKeys from '../components/ErrorNoKeys_'
-import ErrorNoHomePage from '../components/ErrorNoHomePage_'
+import Layout from '../components/Layout'
+import ErrorNoKeys from '../components/ErrorNoKeys'
+import ErrorNoHomePage from '../components/ErrorNoHomePage'
 
 interface HomeProps {
   page: types.Page,
