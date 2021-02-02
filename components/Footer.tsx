@@ -5,7 +5,11 @@ const Footer: React.FC = () => {
     <footer className={styles.footer}>
       <div className={styles.footerWrapper}>
         <div className={styles.imageWrapper}>
-          <img src="/react-bricks-icon.svg" alt="React Bricks" className={styles.image} />
+          <img
+            src="/react-bricks-icon.svg"
+            alt="React Bricks"
+            className={styles.image}
+          />
           <div className={styles.footerWrite}>Next.js website starter</div>
         </div>
         <div className={styles.footerDate}>
