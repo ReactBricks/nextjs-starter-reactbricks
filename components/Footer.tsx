@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
             alt="React Bricks"
             className={styles.image}
           />
-          <div className={styles.footerWrite}>Next.js website starter</div>
+          <div className={styles.footerWrite}>Next.js empty starter</div>
         </div>
         <div className={styles.footerDate}>
           © {new Date().getFullYear()}{' '}
