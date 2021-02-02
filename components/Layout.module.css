@@ -1,0 +1,13 @@
+.layout {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* this next 4 rows are for make the footer at the bottom of the page */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+.children {
+  margin-bottom: auto;
+}

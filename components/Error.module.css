@@ -1,0 +1,34 @@
+.wrapper {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+  color: #4b5563;
+}
+.title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #dc2626;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.paragraph1 {
+  margin-bottom: 1.5rem;
+}
+.subtitle {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: black;
+  background-color: #f3f4f6;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+.paragraph2 {
+  margin-bottom: 0.5rem;
+}
+.error {
+  background-color: #111827;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  margin: 0px
+}

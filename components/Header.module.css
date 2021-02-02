@@ -1,0 +1,70 @@
+.header {
+  background-color: white;
+  height: 5rem;
+  padding: 1.25rem 0 1.25rem 0;
+  border-bottom-width: 1px;
+  border-color: #e5e7eb;
+  border-bottom-style: solid;
+  position: sticky;
+  top: 0px;
+}
+.headerWrapper {
+  max-width: 64rem;
+  margin: 0 auto 0 auto;
+  padding: 0 1.5rem 0 1.5rem;
+}
+.headerSubWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.headerView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.image {
+  width: 12rem;
+}
+.groupLink {
+  margin-left: 2rem;
+  display: flex;
+  text-align: center;
+ 
+}
+.coupleLink {
+  color: #6b7280;
+  --tw-space-x-reverse: 0;
+  margin-left: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-right: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  text-decoration: inherit;
+}
+.coupleLink:hover {
+  color: #be185d;
+}
+.singleLink {
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.25rem;
+  color: white;
+  font-weight: 500;
+  background-color: #0ea5e9;
+  text-decoration: inherit;
+}
+.singleLink:hover {
+  background-color: #0284c7;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 10px 10px -5px rgb(0 0 0 / 4%);
+  transition-duration: 200ms;
+}
+@media (min-width: 640px) {
+  .headerSubWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .headerView {
+    flex-direction: row;
+    margin-bottom: 0px;
+  }
+}
