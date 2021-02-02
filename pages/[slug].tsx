@@ -11,7 +11,7 @@ import Head from 'next/head'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
 import config from '../react-bricks/config'
-import Layout from '../components/layout'
+import Layout from '../components/Layout_'
 
 interface PageProps {
   page: types.Page
