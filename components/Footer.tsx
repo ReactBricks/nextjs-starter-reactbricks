@@ -3,18 +3,18 @@ import styles from './Footer.module.css'
 const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.footerWrapper}>
-        <div className={styles.imageWrapper}>
+      <div className={styles.container}>
+        <div className={styles.logoWrapper}>
           <img
             src="/react-bricks-icon.svg"
             alt="React Bricks"
-            className={styles.image}
+            className={styles.logo}
           />
-          <div className={styles.footerWrite}>Next.js empty starter</div>
+          <div className={styles.starterName}>Next.js empty starter</div>
         </div>
-        <div className={styles.footerDate}>
+        <div className={styles.copy}>
           © {new Date().getFullYear()}{' '}
-          <a href="https://reactbricks.com" className={styles.footerLink}>
+          <a href="https://reactbricks.com" className={styles.copyLink}>
             React Bricks
           </a>
         </div>

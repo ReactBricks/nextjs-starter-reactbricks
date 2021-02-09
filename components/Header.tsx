@@ -5,22 +5,18 @@ import styles from './Header.module.css'
 
 const Header: React.FC = () => (
   <header className={styles.header}>
-    <div className={styles.headerWrapper}>
-      <div className={styles.headerSubWrapper}>
-        <div className={styles.headerView}>
-          <img
-            src="/react-bricks-logo.svg"
-            className={styles.image}
-            alt="React Bricks"
-          />
-          <div className={styles.groupLink}>
+    <div className={styles.container}>
+      <div className={styles.headerContent}>
+        <div className={styles.logoMenuWrapper}>
+          <img src="/react-bricks-logo.svg" className={styles.logo} alt="React Bricks" />
+          <div className={styles.headerMenu}>
             <Link href="/">
-              <a className={styles.coupleLink}>Home</a>
+              <a className={styles.menuLink}>Home</a>
             </Link>
           </div>
         </div>
         <Link href="/admin">
-          <a className={styles.singleLink}>Edit content</a>
+          <a className={styles.callToAction}>Edit content</a>
         </Link>
       </div>
     </div>
