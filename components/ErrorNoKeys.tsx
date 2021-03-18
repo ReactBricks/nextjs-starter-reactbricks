@@ -10,7 +10,7 @@ const ErrorNoKeys = () => {
         <code className={styles.code}>.env.local</code> file.
       </p>
       <p className={styles.paragraph2}>
-        Please create a <code className={styles.code}>.local.env</code> file with:
+        Please create a <code className={styles.code}>.env.local</code> file with:
       </p>
       <pre className={styles.pre}>
         {`NEXT_PUBLIC_APP_ID=...
