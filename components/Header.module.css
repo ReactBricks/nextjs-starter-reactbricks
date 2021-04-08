@@ -1,11 +1,9 @@
 .header {
   background-color: white;
-  height: 5rem;
   padding: 1.25rem 0 1.25rem 0;
   border-bottom-width: 1px;
   border-color: #e5e7eb;
   border-bottom-style: solid;
-  position: sticky;
   top: 0px;
 }
 .container {
@@ -37,8 +35,8 @@
 .menuLink {
   color: #6b7280;
   --tw-space-x-reverse: 0;
-  margin-left: calc(1.25rem * var(--tw-space-x-reverse));
-  margin-right: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-left: 0;
+  margin-right: 1.25rem;
   text-decoration: inherit;
 }
 .menuLink:hover {
@@ -49,15 +47,20 @@
   border-radius: 0.25rem;
   color: white;
   font-weight: 500;
-  background-color: #0ea5e9;
+  background-color: #0ab6d4;
   text-decoration: inherit;
 }
 .callToAction:hover {
-  background-color: #0284c7;
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 10px 10px -5px rgb(0 0 0 / 4%);
+  background-color: #0b91b2;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%),
+    0 10px 10px -5px rgb(0 0 0 / 4%);
   transition-duration: 200ms;
 }
 @media (min-width: 640px) {
+  .header {
+    height: 5rem;
+    position: sticky;
+  }
   .headerContent {
     flex-direction: row;
     justify-content: space-between;
