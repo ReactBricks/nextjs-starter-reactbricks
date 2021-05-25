@@ -1218,9 +1218,9 @@ lodash.sortby@^4.7.0:
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
 lodash@^4.1.1, lodash@^4.17.13, lodash@^4.17.4:
-  version "4.17.20"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
-  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
@@ -1637,10 +1637,10 @@ raw-body@2.4.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-bricks@2.3.0-beta.2:
-  version "2.3.0-beta.2"
-  resolved "https://registry.yarnpkg.com/react-bricks/-/react-bricks-2.3.0-beta.2.tgz#fc2749454eec253cd597b18ce2f0484051b9523f"
-  integrity sha512-c/pKBD67HIAjlbEs38Sqm3OtO5YJ1kK+qX2qYpCH0mRCdtptVEiC76HYfUVdUIY9oLTkfcVSEh3lfFnC1QbStg==
+react-bricks@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/react-bricks/-/react-bricks-2.3.0.tgz#9b188cceaf1e63cfa4c639661ec5bc21c4151117"
+  integrity sha512-W0oO3IG/pnDe4Svvdd/mEpa9ETiQdTJmdwyAMzfpHEqlSLcKnvBIj1Je9C+7QH4iKftcOhLDmVwBkWTWSo3gWA==
   dependencies:
     "@tippyjs/react" "^4.2.4"
     axios "^0.21.1"
