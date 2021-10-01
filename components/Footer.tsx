@@ -1,20 +1,18 @@
-import styles from './Footer.module.css'
-
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.container}>
-        <div className={styles.logoWrapper}>
+    <footer className="bg-gray-50 border-t py-12 h-32">
+      <div className="max-w-5xl mx-auto flex justify-between">
+        <div className="flex items-center space-x-4">
           <img
             src="/react-bricks-icon.svg"
             alt="React Bricks"
-            className={styles.logo}
+            className="w-8"
           />
-          <div className={styles.starterName}>Next.js empty starter</div>
+          <div className="uppercase text-sm tracking-wider">Next.js empty starter</div>
         </div>
-        <div className={styles.copy}>
+        <div className="text-gray-500 text-sm">
           © {new Date().getFullYear()}{' '}
-          <a href="https://reactbricks.com" className={styles.copyLink}>
+          <a href="https://reactbricks.com" className="hover:text-pink-600">
             React Bricks
           </a>
         </div>
