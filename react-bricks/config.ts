@@ -11,7 +11,12 @@ const config: types.ReactBricksConfig = {
   pageTypes,
   bricks,
   logo: '/logo.svg',
-  //contentClassName: '',
+  //==============================
+  // Usually defined dynamically in _app.tsx to manage Dark mode
+  // See the Next with Tailwind CSS starter
+  // contentClassName: 'content',
+  // isDarkColorMode: ...,
+  // toggleColorMode: ...,
   renderLocalLink: NextLink,
   navigate: (path: string) => Router.push(path),
   loginPath: '/admin',
@@ -20,6 +25,11 @@ const config: types.ReactBricksConfig = {
   appSettingsPath: '/admin/app-settings',
   useCssInJs: false,
   appRootElement: '#__next',
+  clickToEditSide: types.ClickToEditSide.BottomRight,
+  customFields: [],
+  //responsiveBreakpoints: [{ type: types.DeviceType.Phone, width: 480, label: 'Smartphone'}],
+  enableAutoSave: true,
+  disableSaveIfInvalidProps: false,
 }
 
 export default config
