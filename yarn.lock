@@ -1810,10 +1810,10 @@ rc-util@^5.0.1:
     react-is "^16.12.0"
     shallowequal "^1.1.0"
 
-react-bricks@3.0.0-beta.0:
-  version "3.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/react-bricks/-/react-bricks-3.0.0-beta.0.tgz#81f8c0d7a40691739262472badab0c59223261b4"
-  integrity sha512-XwXpxqLy8klGc3i+ib45acR7BU1m1xXWRO69GfuaC/Kkin7FSing+e50Hvfv/gWNRlrnUOKqvdCLTDeuftH2hw==
+react-bricks@^3.0.0-beta.1:
+  version "3.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/react-bricks/-/react-bricks-3.0.0-beta.1.tgz#8be536e74c30cb4dd8c6ae55797c5998690f483a"
+  integrity sha512-mr3/QEJ3c4ezZaCs1I4h7nZvGOM7AN66sw78mPQ3dtYyReCHh20DiQmuFoO5pnnPmb5LStT5lYOum0Jp8ExlEw==
   dependencies:
     "@tippyjs/react" "^4.2.5"
     axios "^0.21.1"
