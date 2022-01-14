@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Header from './header'
-import Footer from './footer'
+import Header from './header_'
+import Footer from './footer_'
 
 const Layout: React.FC = ({ children }) => {
   return (
