@@ -10,14 +10,17 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^12.0.7",
+    "next": "^12.1.0",
+    "prism-theme-night-owl": "^1.4.0",
+    "prismjs": "^1.27.0",
     "react": "^17.0.2",
-    "react-bricks": "^3.2.8",
+    "react-bricks": "^3.2.12",
+    "react-bricks-ui": "^0.3.20",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@types/node": "^17.0.7",
-    "@types/react": "^17.0.38",
-    "typescript": "^4.5.4"
+    "@types/node": "^17.0.21",
+    "@types/react": "^17.0.39",
+    "typescript": "^4.5.5"
   }
 }
