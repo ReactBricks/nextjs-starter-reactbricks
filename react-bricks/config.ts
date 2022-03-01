@@ -11,6 +11,7 @@ const config: types.ReactBricksConfig = {
   pageTypes,
   bricks,
   logo: '/logo.svg',
+  previewPath: '/preview',
   //==============================
   // Usually defined dynamically in _app.tsx to manage Dark mode
   // See the Next with Tailwind CSS starter
@@ -30,6 +31,7 @@ const config: types.ReactBricksConfig = {
   //responsiveBreakpoints: [{ type: types.DeviceType.Phone, width: 480, label: 'Smartphone'}],
   enableAutoSave: true,
   disableSaveIfInvalidProps: false,
+  enablePreview: true,
 }
 
 export default config
