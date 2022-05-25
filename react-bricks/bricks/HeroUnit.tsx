@@ -17,13 +17,9 @@ interface HeroUnitProps {
 //=============================
 const MyHeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
   return (
-    <div
-      className={`max-w-xl mx-auto px-6 ${
-        padding === 'big' ? 'py-20' : 'py-12'
-      }`}
-    >
-      <div className="flex flex-col items-center">
-        <Image propName="icon" alt="Icon" imageClassName="w-20 mb-5" />
+    <div className={`max-w-xl mx-auto px-6 ${padding === 'big' ? 'py-20' : 'py-12'}`}>
+      <div>
+        <Image propName="icon" alt="Icon" imageClassName="w-20 mb-5 mx-auto" />
         <Text
           renderBlock={(props) => (
             <h1 className="text-3xl sm:text-4xl text-center font-black text-gray-900 dark:text-white leading-tight mb-3">
@@ -32,9 +28,7 @@ const MyHeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
           )}
           placeholder="Type a title..."
           propName="title"
-          renderPlaceholder={(props) => (
-            <span className="opacity-30">{props.children}</span>
-          )}
+          renderPlaceholder={(props) => <span className="opacity-30">{props.children}</span>}
         />
         <RichText
           renderBlock={(props) => (
