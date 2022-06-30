@@ -10,9 +10,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^12.1.6",
+    "next": "^12.2.0",
     "react": "^18.2.0",
-    "react-bricks": "^3.2.27",
+    "react-bricks": "^3.2.29",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
