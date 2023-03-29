@@ -112,7 +112,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
 export const getStaticPaths: GetStaticPaths = async (context) => {
   if (!config.apiKey) {
-    return { paths: [], fallback: false }
+    return { paths: [], fallback: true }
   }
   const allPages = await fetchPages(config.apiKey)
 

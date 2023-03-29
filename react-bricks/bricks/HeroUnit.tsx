@@ -1,6 +1,6 @@
 import React from "react"
 import { Text, RichText, Image, types } from "react-bricks/frontend"
-import styles from "../../components/HeroUnit.module.css"
+import styles from "../../css/HeroUnit.module.css"
 
 //=============================
 // Local Types
