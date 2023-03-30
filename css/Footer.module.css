@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: auto;
+    margin-bottom: 0px;
+    margin-right: 2rem;
+  }
+}
+
+.linkLogo {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.imageLogo {
+  width: 12rem;
+  height: 1.75rem;
+  object-fit: contain;
+  object-position: left;
+}
+
+.paragraphRichText {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(107 114 128);
+}
+
+.dark .paragraphRichText {
+  color: white;
+}
+
+.renderLink {
+  color: rgb(14 165 233);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.renderLink:hover {
+  color: rgb(2 132 199);
+  transform: translateY(-1px);
+}

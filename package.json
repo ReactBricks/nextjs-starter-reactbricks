@@ -13,12 +13,12 @@
     "next": "^13.2.4",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
-    "react-bricks": "3.8.10",
+    "react-bricks": "3.9.0-beta.1",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^18.15.5",
-    "@types/react": "^18.0.28",
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.31",
     "typescript": "^5.0.2"
   }
 }

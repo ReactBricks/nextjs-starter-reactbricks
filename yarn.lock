@@ -9,7 +9,7 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
-"@headlessui/react@^1.7.10":
+"@headlessui/react@^1.7.13":
   version "1.7.13"
   resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.7.13.tgz#fd150b394954e9f1d86ed2340cffd1217d6e7628"
   integrity sha512-9n+EQKRtD9266xIHXdY5MfiXPDfYwl7zBM7KOx2Ae3Gdgxy8QML1FkCMjq6AsOf0l6N9uvI4HcFtuFlenaldKg==
@@ -132,20 +132,29 @@
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.191.tgz#09511e7f7cba275acd8b419ddac8da9a6a79e2fa"
   integrity sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==
 
-"@types/node@^18.15.5":
-  version "18.15.10"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.15.10.tgz#4ee2171c3306a185d1208dad5f44dae3dee4cfe3"
-  integrity sha512-9avDaQJczATcXgfmMAW3MIWArOO7A+m90vuCFLr8AotWf8igO/mRoYukrk2cqZVtv38tHs33retzHEilM7FpeQ==
+"@types/node@^18.15.11":
+  version "18.15.11"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.15.11.tgz#b3b790f09cb1696cffcec605de025b088fa4225f"
+  integrity sha512-E5Kwq2n4SbMzQOn6wnmBjuK9ouqlURrcZDVfbo9ftDDTFt3nk7ZKK4GMOzoYgnpQJKcxwQw+lGaBvvlMo0qN/Q==
 
 "@types/prop-types@*":
   version "15.7.5"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
   integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
 
-"@types/react@>=16.9.11", "@types/react@^18.0.28":
+"@types/react@>=16.9.11":
   version "18.0.29"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.29.tgz#4cead505172c0020c5b51940199e31fc6ff2f63a"
   integrity sha512-wXHktgUABxplw1+UnljseDq4+uztQyp2tlWZRIxHlpchsCFqiYkvaDS8JR7eKOQm8wziTH/el5qL7D6gYNkYcw==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^18.0.31":
+  version "18.0.31"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.31.tgz#a69ef8dd7bfa849734d258c793a8fe343a338205"
+  integrity sha512-EEG67of7DsvRDU6BLLI0p+k1GojDLz9+lZsnCpCRTa/lOokvyPBvp8S5x+A24hME3yyQuIipcP70KJ6H7Qupww==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -700,12 +709,12 @@ react-big-calendar@^1.6.4:
     react-overlays "^5.2.1"
     uncontrollable "^7.2.1"
 
-react-bricks@3.8.10:
-  version "3.8.10"
-  resolved "https://registry.yarnpkg.com/react-bricks/-/react-bricks-3.8.10.tgz#76d82a9c7e315a9353b8b54f510a6b91e3df2829"
-  integrity sha512-Y4+9CYR8Xa44vQVL4KJ1OjUHxBbzd9ik+JukCM1HHdJpe3QjSK2dAmx0IT6XuyJVN1x0WJJDDhElK60G/fRStQ==
+react-bricks@3.9.0-beta.1:
+  version "3.9.0-beta.1"
+  resolved "https://registry.yarnpkg.com/react-bricks/-/react-bricks-3.9.0-beta.1.tgz#09377e00d4858a2b507d15350ec250f92b70a2df"
+  integrity sha512-1GpK4fPsVRbWrZpRFHYs9EkRVvn9W3/aPsPocwtmSq0MkMOBoalXQtd0ipn2RSziNJmkMUhGaM30uVX3OMXHrA==
   dependencies:
-    "@headlessui/react" "^1.7.10"
+    "@headlessui/react" "^1.7.13"
     "@tippyjs/react" "^4.2.6"
     axios "^1.3.2"
     classnames "^2.3.2"

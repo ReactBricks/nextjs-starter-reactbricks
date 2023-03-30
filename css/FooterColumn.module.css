@@ -1,0 +1,26 @@
+.container {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    width: auto;
+    margin-right: 2rem;
+  }
+}
+
+.text {
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  min-width: 120px;
+  color: rgb(156 163 175);
+}
+
+.dark .text {
+  color: rgb(243 244 246);
+}

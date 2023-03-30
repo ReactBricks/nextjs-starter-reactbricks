@@ -1,0 +1,18 @@
+.text {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: rgb(107 114 128);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.text:hover {
+  color: rgb(75 85 99);
+  transform: translateY(-1px);
+}
+
+.dark .text:hover {
+  color: white;
+}
