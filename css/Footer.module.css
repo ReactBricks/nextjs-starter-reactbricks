@@ -44,3 +44,35 @@
   color: rgb(2 132 199);
   transform: translateY(-1px);
 }
+
+.bgWhite {
+  background-color: white;
+}
+
+.dark .bgWhite {
+  background-color: rgb(17 24 39);
+}
+
+.bgLightGray {
+  background-color: rgb(249 250 251);
+}
+
+.dark .bgLightGray {
+  background-color: rgb(17 24 39);
+}
+
+.bgGray {
+  background-color: rgb(243 244 246);
+}
+
+.dark .bgGray {
+  background-color: rgb(17 24 39);
+}
+
+.bgDarkGray {
+  background-color: rgb(31 41 55);
+}
+
+.dark .bgDarkGray {
+  background-color: rgb(17 24 39);
+}
