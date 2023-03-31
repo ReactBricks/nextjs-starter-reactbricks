@@ -1,13 +1,46 @@
+.section {
+  background-color: #f9fafb;
+}
+
 .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    margin-left: 5.55555%;
+    margin-right: 5.55555%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    margin-left: 11.1111%;
+    margin-right: 11.1111%;
+  }
+}
+
+.elementsInfo {
   width: 100%;
   margin-bottom: 3rem;
 }
 
 @media (min-width: 1024px) {
-  .container {
+  .elementsInfo {
     width: auto;
     margin-bottom: 0px;
     margin-right: 2rem;
+  }
+
+  .container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 

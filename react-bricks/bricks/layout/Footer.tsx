@@ -1,41 +1,16 @@
 import React from "react"
 import { RichText, Image, Repeater, types, Link } from "react-bricks/frontend"
-// import Container from "../shared/components/Container"
-// import Section from "../shared/components/Section"
 
 import styles from "../../../css/Footer.module.css"
 
-interface FooterProps {
-  backgroundColor?: { color: string; className: string }
-  backgroundImage?: types.IImageSource
-  backgroundImageDark?: types.IImageSource
-  borderTop: "full" | "boxed" | "none"
-  borderBottom: "full" | "boxed" | "none"
-  width?: "medium" | "small" | "full"
-  paddingTop: "0" | "6" | "8" | "10" | "12" | "16" | "20"
-  paddingBottom: "0" | "6" | "8" | "10" | "12" | "16" | "20"
-}
+interface FooterProps {}
 
-const Footer: types.Brick<FooterProps> = ({
-  backgroundColor,
-  borderTop,
-  borderBottom,
-  paddingTop,
-  paddingBottom,
-}) => {
+const Footer: types.Brick<FooterProps> = ({}) => {
   return (
     <footer>
-      <div
-      // backgroundColor={backgroundColor}
-      // borderTop={borderTop}
-      // borderBottom={borderBottom}
-      >
-        <div
-        // paddingTop={paddingTop}
-        // paddingBottom={paddingBottom}
-        // className='flex justify-between flex-wrap'
-        >
-          <div className={styles.container}>
+      <section className={styles.section}>
+        <div className={styles.container}>
+          <div className={styles.elementsInfo}>
             <Link href='/' className={styles.linkLogo}>
               <Image
                 propName='logo'
@@ -60,7 +35,7 @@ const Footer: types.Brick<FooterProps> = ({
           </div>
           <Repeater propName='columns' />
         </div>
-      </div>
+      </section>
     </footer>
   )
 }
@@ -70,7 +45,6 @@ Footer.schema = {
   label: "Footer",
   category: "layout",
   tags: ["footer"],
-
   repeaterItems: [
     {
       name: "columns",
@@ -78,17 +52,8 @@ Footer.schema = {
       max: 4,
     },
   ],
-
   // Defaults when a new brick is added
   getDefaultProps: () => ({
-    paddingTop: "16",
-    paddingBottom: "16",
-    borderBottom: "none",
-    backgroundColor: {
-      color: "#f9fafb",
-      className: "bg-gray-50 dark:bg-gray-900",
-    },
-    borderTop: "full",
     logo: {
       src: "https://images.reactbricks.com/original/7fd7ef1a-928f-45d6-b7a7-ff34bf91c15e.svg",
       placeholderSrc:
@@ -202,119 +167,7 @@ Footer.schema = {
   }),
 
   // Sidebar Edit controls for props
-  sideEditProps: [
-    {
-      groupName: "Background",
-      props: [
-        {
-          name: "backgroundColor",
-          label: "Background",
-          type: types.SideEditPropType.Select,
-          selectOptions: {
-            display: types.OptionsDisplay.Color,
-            options: [
-              {
-                label: "White",
-                value: {
-                  color: "#ffffff",
-                  className: "bgWhite",
-                },
-              },
-              {
-                label: `Light Gray`,
-                value: {
-                  color: "#f9fafb",
-                  className: "bgLightGray",
-                },
-              },
-              {
-                label: "Gray",
-                value: {
-                  color: "#f3f4f6",
-                  className: "bgGray",
-                },
-              },
-              {
-                label: `Dark Gray`,
-                value: {
-                  color: "#1f2937",
-                  className: "dark bgDarkGray",
-                },
-              },
-            ],
-          },
-        },
-      ],
-    },
-    {
-      groupName: "Padding & Borders",
-      defaultOpen: false,
-      props: [
-        {
-          name: "paddingTop",
-          label: "Padding Top",
-          type: types.SideEditPropType.Select,
-          selectOptions: {
-            display: types.OptionsDisplay.Select,
-            options: [
-              { value: "20", label: "20" },
-              { value: "16", label: "16" },
-              { value: "12", label: "12" },
-              { value: "10", label: "10" },
-              { value: "8", label: "8" },
-              { value: "6", label: "6" },
-              { value: "0", label: "None" },
-            ],
-          },
-        },
-        {
-          name: "paddingBottom",
-          label: "Padding Bottom",
-          type: types.SideEditPropType.Select,
-          selectOptions: {
-            display: types.OptionsDisplay.Select,
-            options: [
-              { value: "20", label: "20" },
-              { value: "16", label: "16" },
-              { value: "12", label: "12" },
-              { value: "10", label: "10" },
-              { value: "8", label: "8" },
-              { value: "6", label: "6" },
-              { value: "0", label: "None" },
-            ],
-          },
-        },
-
-        {
-          name: "borderTop",
-          label: "Border Top",
-          type: types.SideEditPropType.Select,
-          selectOptions: {
-            display: types.OptionsDisplay.Select,
-            options: [
-              { value: "none", label: "None" },
-              { value: "full", label: "Full-width" },
-              { value: "boxed", label: "Boxed" },
-            ],
-          },
-        },
-        {
-          name: "borderBottom",
-          label: "Border Bottom",
-          type: types.SideEditPropType.Select,
-          selectOptions: {
-            display: types.OptionsDisplay.Select,
-            options: [
-              { value: "none", label: "None" },
-              { value: "full", label: "Full-width" },
-              { value: "boxed", label: "Boxed" },
-            ],
-          },
-        },
-        ,
-      ],
-    },
-  ],
+  sideEditProps: [],
 }
 
 export default Footer

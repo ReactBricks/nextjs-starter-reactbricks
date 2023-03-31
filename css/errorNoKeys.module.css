@@ -6,15 +6,13 @@
   padding-right: 1.5rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
+  color: rgb(75 85 99);
 }
 
 .title {
   font-size: 1.5rem;
   line-height: 2rem;
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
+  color: rgb(220 38 38);
   font-weight: 600;
   margin-bottom: 2rem;
 }
@@ -26,10 +24,8 @@
 .codeError {
   font-size: 0.875rem;
   line-height: 1.25rem;
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  color: rgb(0 0 0);
+  background-color: rgb(243 244 246);
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   padding-top: 0.25rem;
