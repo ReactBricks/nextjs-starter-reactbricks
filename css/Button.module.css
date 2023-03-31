@@ -1,0 +1,52 @@
+.buttonWrapper {
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 9999px;
+  font-weight: 700;
+  line-height: 1;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.buttonWrapper:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transform: translateY(-0.125rem);
+}
+
+.buttonPsmall {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  min-width: 75px;
+}
+
+.buttonPnormal {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  min-width: 120px;
+}
+
+.buttonColorSolid {
+  background-color: rgb(14 165 233);
+  color: white;
+}
+.buttonColorSolid:hover {
+  background-color: rgb(2 132 199);
+}
+
+.buttonColorOutline {
+  border-width: 1px;
+  border-color: rgb(2 132 199);
+  color: rgb(2 132 199);
+}
+.dark .buttonColorOutline {
+  border-color: rgb(255 255 255);
+  color: white;
+}

@@ -1,0 +1,111 @@
+@media (min-width: 640px) {
+  .navClass {
+    margin-left: 5.55555%;
+    margin-right: 5.55555%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .containerMenuItems {
+    display: flex;
+  }
+  .containerButtons {
+    display: block;
+  }
+  .containerHamburgerMenu {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .navClass {
+    margin-left: 11.1111%;
+    margin-right: 11.1111%;
+  }
+}
+
+.navClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+.linkLogo {
+  display: inline-flex;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-right: 1.5rem;
+}
+
+.imageClass {
+  display: block;
+  width: 8rem;
+  height: 1.75rem;
+  object-fit: contain;
+  object-position: left;
+}
+
+.containerMenuItems {
+  display: none;
+  align-items: center;
+}
+.containerMenuItems > :not([hidden]) ~ :not([hidden]) {
+  margin-left: 0.5rem;
+}
+
+.containerButtons {
+  display: none;
+  margin-left: auto;
+}
+
+.buttonsWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.buttonsWrapper > :not([hidden]) ~ :not([hidden]) {
+  margin-left: 1.25rem;
+}
+
+.containerHamburgerMenu {
+  position: relative;
+  margin-left: auto;
+}
+
+.buttonHamburgerMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 5px;
+}
+
+.buttonHamburgerMenu:hover {
+  background-color: rgb(14 165 233 / 20);
+  color: rgb(2 132 199);
+}
+
+.buttonHamburgerMenu:focus {
+  background-color: rgb(14 165 233 / 20);
+  color: rgb(2 132 199);
+}
+
+.containerHamburgerMenuItems {
+  position: absolute;
+  top: 2rem;
+  right: 0px;
+  width: 16rem;
+  background-color: white;
+  padding: 1.25rem;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  z-index: 10;
+}

@@ -1,0 +1,75 @@
+@media (min-width: 1024px) {
+  .linkContainer {
+    padding: 0.75rem;
+  }
+  .fiContainer {
+    display: none;
+  }
+  .textContainer {
+    overflow: auto;
+  }
+  .linkText {
+    overflow: auto;
+    white-space: normal;
+    font-weight: 700;
+  }
+  .descriptionContainer {
+    display: block;
+  }
+}
+
+.linkContainer {
+  padding: 0;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.fiContainer {
+  color: rgb(14 165 233);
+  margin-right: 0.5rem;
+}
+
+.textContainer {
+  flex: 1 1 0%;
+  overflow: hidden;
+}
+
+.linkContainer:hover .textContainer div:first-child .linkText {
+  color: rgb(2 132 199);
+}
+
+.linkText {
+  color: rgb(17 24 39);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.dark .linkText {
+  color: white;
+}
+
+.descriptionContainer {
+  display: none;
+}
+
+.linkDescription {
+  color: rgb(75 85 99);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.dark .linkDescription {
+  color: white;
+}

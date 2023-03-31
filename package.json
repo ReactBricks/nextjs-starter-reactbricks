@@ -13,7 +13,7 @@
     "next": "^13.2.4",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
-    "react-bricks": "3.9.0-beta.1",
+    "react-bricks": "3.9.0-beta.2",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
