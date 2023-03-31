@@ -1,29 +1,3 @@
-@media (min-width: 640px) {
-  .navClass {
-    margin-left: 5.55555%;
-    margin-right: 5.55555%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .containerMenuItems {
-    display: flex;
-  }
-  .containerButtons {
-    display: block;
-  }
-  .containerHamburgerMenu {
-    display: none;
-  }
-}
-
-@media (min-width: 1280px) {
-  .navClass {
-    margin-left: 11.1111%;
-    margin-right: 11.1111%;
-  }
-}
-
 .navClass {
   display: flex;
   justify-content: center;
@@ -108,4 +82,30 @@
   border-radius: 0.5rem;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   z-index: 10;
+}
+
+@media (min-width: 640px) {
+  .navClass {
+    margin-left: 5.55555%;
+    margin-right: 5.55555%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .containerMenuItems {
+    display: flex;
+  }
+  .containerButtons {
+    display: block;
+  }
+  .containerHamburgerMenu {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .navClass {
+    margin-left: 11.1111%;
+    margin-right: 11.1111%;
+  }
 }

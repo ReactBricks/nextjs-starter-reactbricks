@@ -1,18 +1,3 @@
-@media (min-width: 1024px) {
-  .linkMenuItem {
-    display: inline-flex;
-  }
-  .linkHamburgerMenuItem {
-    display: none;
-  }
-  .containerLinkItemWithSubItems {
-    display: block;
-  }
-  .containerSubmenuItems {
-    display: none;
-  }
-}
-
 .linkMenuItem {
   display: none;
   justify-content: center;
@@ -151,4 +136,19 @@
 
 .dark .containerLinkText {
   color: white;
+}
+
+@media (min-width: 1024px) {
+  .linkMenuItem {
+    display: inline-flex;
+  }
+  .linkHamburgerMenuItem {
+    display: none;
+  }
+  .containerLinkItemWithSubItems {
+    display: block;
+  }
+  .containerSubmenuItems {
+    display: none;
+  }
 }
