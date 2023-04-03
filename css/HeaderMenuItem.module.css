@@ -14,13 +14,16 @@
     text-decoration-color, fill, stroke;
   transition-duration: 150ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-
   color: rgb(75 85 99);
 }
+
 .linkMenuItemActive {
   color: rgb(2 132 199);
-
   background-color: rgb(14 165 233 / 0.1);
+}
+
+:global(.dark) .linkMenuItemActive {
+  color: rgb(56 189 248);
 }
 
 :global(.dark) .linkMenuItem {
@@ -32,6 +35,10 @@
   color: rgb(2 132 199);
 }
 
+:global(.dark) .linkMenuItem:hover {
+  color: rgb(56 189 248);
+}
+
 .linkHamburgerMenuItem {
   display: block;
   font-size: 0.875rem;
@@ -41,7 +48,6 @@
     text-decoration-color, fill, stroke;
   transition-duration: 150ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-
   color: rgb(31 41 55);
 }
 :global(.dark) .linkHamburgerMenuItem {
@@ -87,15 +93,26 @@
   color: rgb(2 132 199);
 }
 
+:global(.dark) .buttonLinkItemWithSubItems:hover {
+  color: rgb(56 189 248);
+}
+
 .buttonLinkItemWithSubItemsOpen {
   background-color: rgb(14 165 233 / 0.2);
   color: rgb(2 132 199);
 }
 
+:global(.dark) .buttonLinkItemWithSubItemsOpen {
+  color: rgb(56 189 248);
+}
+
 .buttonTextActive {
   color: rgb(2 132 199);
-
   background-color: rgb(14 165 233 / 0.1);
+}
+
+:global(.dark) .buttonTextActive {
+  color: rgb(56 189 248);
 }
 
 .svgClass {
@@ -130,7 +147,6 @@
   line-height: 1rem;
   font-weight: 800;
   text-transform: uppercase;
-
   color: rgb(107 114 128);
   letter-spacing: 0.35rem;
   margin-bottom: 1rem;

@@ -19,6 +19,10 @@
   color: rgb(2 132 199);
 }
 
+:global(.dark) .linkContainer:hover .linkText {
+  color: rgb(56 189 248);
+}
+
 .linkText {
   color: rgb(17 24 39);
   font-size: 0.875rem;

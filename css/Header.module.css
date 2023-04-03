@@ -82,6 +82,10 @@
   color: rgb(2 132 199);
 }
 
+:global(.dark) .buttonHamburgerMenu:focus {
+  color: rgb(56 189 248);
+}
+
 .containerHamburgerMenuItems {
   position: absolute;
   top: 2rem;
