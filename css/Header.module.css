@@ -1,3 +1,11 @@
+.section {
+  background-color: white;
+}
+
+:global(.dark) .section {
+  background-color: rgb(17 24 39);
+}
+
 .navClass {
   display: flex;
   justify-content: center;
@@ -87,6 +95,10 @@
   z-index: 10;
 }
 
+:global(.dark) .containerHamburgerMenuItems {
+  background-color: rgb(17 24 39);
+}
+
 .darkModeButtonMobile {
   display: flex;
   align-items: center;
@@ -105,8 +117,8 @@
   cursor: pointer;
 }
 
-.dark .darkModeButtonMobile,
-.dark .darkModeButtonDesktop {
+:global(.dark) .darkModeButtonMobile,
+:global(.dark) .darkModeButtonDesktop {
   color: rgb(229 231 235);
 }
 

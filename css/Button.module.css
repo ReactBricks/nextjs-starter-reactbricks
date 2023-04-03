@@ -46,7 +46,7 @@
   border-color: rgb(2 132 199);
   color: rgb(2 132 199);
 }
-.dark .buttonColorOutline {
+:global(.dark) .buttonColorOutline {
   border-color: rgb(255 255 255);
   color: white;
 }

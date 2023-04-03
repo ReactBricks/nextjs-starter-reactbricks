@@ -1,13 +1,17 @@
+.section {
+  background-color: white;
+}
+
+:global(.dark) .section {
+  background-color: rgb(17 24 39);
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-.section {
-  background-color: white;
 }
 
 .sizeSmall {

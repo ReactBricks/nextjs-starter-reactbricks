@@ -32,7 +32,7 @@
   color: rgb(31 41 55);
 }
 
-.dark .title {
+:global(.dark) .title {
   color: white;
 }
 

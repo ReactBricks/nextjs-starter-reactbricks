@@ -2,6 +2,10 @@
   background-color: #f9fafb;
 }
 
+:global(.dark) .section {
+  background-color: rgb(17 24 39);
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -62,7 +66,7 @@
   color: rgb(107 114 128);
 }
 
-.dark .paragraphRichText {
+:global(.dark) .paragraphRichText {
   color: white;
 }
 
@@ -78,34 +82,3 @@
   transform: translateY(-1px);
 }
 
-.bgWhite {
-  background-color: white;
-}
-
-.dark .bgWhite {
-  background-color: rgb(17 24 39);
-}
-
-.bgLightGray {
-  background-color: rgb(249 250 251);
-}
-
-.dark .bgLightGray {
-  background-color: rgb(17 24 39);
-}
-
-.bgGray {
-  background-color: rgb(243 244 246);
-}
-
-.dark .bgGray {
-  background-color: rgb(17 24 39);
-}
-
-.bgDarkGray {
-  background-color: rgb(31 41 55);
-}
-
-.dark .bgDarkGray {
-  background-color: rgb(17 24 39);
-}

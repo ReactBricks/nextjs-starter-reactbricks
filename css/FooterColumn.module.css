@@ -21,6 +21,6 @@
   color: rgb(156 163 175);
 }
 
-.dark .text {
+:global(.dark) .text {
   color: rgb(243 244 246);
 }

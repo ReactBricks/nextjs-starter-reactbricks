@@ -18,7 +18,7 @@ const Header: types.Brick<HeaderProps> = ({}) => {
   const { isDarkColorMode, toggleColorMode } = useContext(ReactBricksContext)
 
   return (
-    <section>
+    <section className={styles.section}>
       <nav className={styles.navClass}>
         <Link href='/' aria-label='home' className={styles.linkLogo}>
           <Image

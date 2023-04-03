@@ -60,7 +60,7 @@ const HeaderMenuItem: types.Brick<HeaderMenuItemProps> = ({
             renderBlock={({ children }) => (
               <div
                 className={`
-                  ${isActive ? styles.buttonTextActive : null}
+                  ${isActive ? styles.buttonTextActive : ""}
                 `}
               >
                 {children}

@@ -1,3 +1,11 @@
+.container {
+  background-color: white;
+}
+
+:global(.dark) .container {
+  background-color: rgb(17 24 39);
+}
+
 .padding {
   max-width: 36rem;
   margin-left: auto;
@@ -26,14 +34,14 @@
 .title {
   font-size: 1.875rem;
   line-height: 2.25rem;
+  color: rgb(17 24 39);
   text-align: center;
   font-weight: 900;
-  color: rgb(17 24 39);
   line-height: 1.25;
   margin-bottom: 0.75rem;
 }
 
-.dark .title {
+:global(.dark) .title {
   color: rgb(255 255 255);
 }
 
@@ -56,7 +64,7 @@
   color: rgb(55 65 81);
 }
 
-.dark .richText {
+:global(.dark) .richText {
   color: rgb(243 244 246);
 }
 
@@ -71,6 +79,6 @@
   border-radius: 0.25rem;
 }
 
-.dark .code {
+:global(.dark) .code {
   background-color: rgb(55 65 81);
 }

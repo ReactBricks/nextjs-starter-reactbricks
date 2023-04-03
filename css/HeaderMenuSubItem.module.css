@@ -15,7 +15,7 @@
   overflow: hidden;
 }
 
-.linkContainer:hover .textContainer div:first-child .linkText {
+.linkContainer:hover .linkText {
   color: rgb(2 132 199);
 }
 
@@ -32,7 +32,7 @@
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-.dark .linkText {
+:global(.dark) .linkText {
   color: white;
 }
 
@@ -50,7 +50,7 @@
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-.dark .linkDescription {
+:global(.dark) .linkDescription {
   color: white;
 }
 

@@ -18,40 +18,42 @@ interface HeroUnitProps {
 //=============================
 const MyHeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
   return (
-    <div
-      className={`${styles.padding} ${
-        padding === "big" ? styles.bigPadding : styles.smallPadding
-      }`}
-    >
-      <div>
-        <Image propName='icon' alt='Icon' imageClassName={styles.heroImage} />
-        <Text
-          renderBlock={(props) => (
-            <h1 className={styles.title}>{props.children}</h1>
-          )}
-          placeholder='Type a title...'
-          propName='title'
-          renderPlaceholder={(props) => (
-            <span className={styles.placeholderSpan}>{props.children}</span>
-          )}
-        />
-        <RichText
-          renderBlock={(props) => (
-            <p className={styles.richText}>{props.children}</p>
-          )}
-          placeholder='Type a text...'
-          propName='text'
-          allowedFeatures={[
-            types.RichTextFeatures.Bold,
-            types.RichTextFeatures.Italic,
-            types.RichTextFeatures.Highlight,
-            types.RichTextFeatures.Code,
-            types.RichTextFeatures.Link,
-          ]}
-          renderCode={(props) => (
-            <code className={styles.code}>{props.children}</code>
-          )}
-        />
+    <div className={styles.container}>
+      <div
+        className={`${styles.padding} ${
+          padding === "big" ? styles.bigPadding : styles.smallPadding
+        }`}
+      >
+        <div>
+          <Image propName='icon' alt='Icon' imageClassName={styles.heroImage} />
+          <Text
+            renderBlock={(props) => (
+              <h1 className={styles.title}>{props.children}</h1>
+            )}
+            placeholder='Type a title...'
+            propName='title'
+            renderPlaceholder={(props) => (
+              <span className={styles.placeholderSpan}>{props.children}</span>
+            )}
+          />
+          <RichText
+            renderBlock={(props) => (
+              <p className={styles.richText}>{props.children}</p>
+            )}
+            placeholder='Type a text...'
+            propName='text'
+            allowedFeatures={[
+              types.RichTextFeatures.Bold,
+              types.RichTextFeatures.Italic,
+              types.RichTextFeatures.Highlight,
+              types.RichTextFeatures.Code,
+              types.RichTextFeatures.Link,
+            ]}
+            renderCode={(props) => (
+              <code className={styles.code}>{props.children}</code>
+            )}
+          />
+        </div>
       </div>
     </div>
   )
