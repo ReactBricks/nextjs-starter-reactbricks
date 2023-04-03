@@ -20,7 +20,7 @@
 .linkMenuItemActive {
   color: rgb(2 132 199);
 
-  background-color: rgb(14 165 233 / 10);
+  background-color: rgb(14 165 233 / 0.1);
 }
 
 .dark .linkMenuItem {
@@ -28,8 +28,7 @@
 }
 
 .linkMenuItem:hover {
-  background-color: rgb(14 165 233);
-
+  background-color: rgb(14 165 233 / 0.2);
   color: rgb(2 132 199);
 }
 
@@ -50,7 +49,7 @@
 }
 
 .linkHamburgerMenuItem:hover {
-  color: rgb(2 132 199);
+  color: rgb(2 132 199 / 0.2);
 }
 
 .containerLinkItemWithSubItems {
@@ -83,21 +82,20 @@
 }
 
 .buttonLinkItemWithSubItems:hover {
-  background-color: rgb(14 165 233 / 20);
+  background-color: rgb(14 165 233 / 0.2);
 
   color: rgb(2 132 199);
 }
 
 .buttonLinkItemWithSubItemsOpen {
-  background-color: rgb(14 165 233 / 20);
-
+  background-color: rgb(14 165 233 / 0.2);
   color: rgb(2 132 199);
 }
 
 .buttonTextActive {
   color: rgb(2 132 199);
 
-  background-color: rgb(14 165 233 / 10);
+  background-color: rgb(14 165 233 / 0.1);
 }
 
 .svgClass {

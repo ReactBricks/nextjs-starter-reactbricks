@@ -62,12 +62,12 @@
 }
 
 .buttonHamburgerMenu:hover {
-  background-color: rgb(14 165 233 / 20);
+  background-color: rgb(14 165 233 / 0.2);
   color: rgb(2 132 199);
 }
 
 .buttonHamburgerMenu:focus {
-  background-color: rgb(14 165 233 / 20);
+  background-color: rgb(14 165 233 / 0.2);
   color: rgb(2 132 199);
 }
 

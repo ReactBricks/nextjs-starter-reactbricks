@@ -45,11 +45,11 @@ const HeaderMenuItem: types.Brick<HeaderMenuItemProps> = ({
 
   return (
     <div>
-      <div className={styles.containerLinkItemWithSubItem}>
+      <div className={styles.containerLinkItemWithSubItems}>
         <button
           ref={ref}
           className={`${styles.buttonLinkItemWithSubItems} ${
-            open ? styles.buttonLinkItemWithSubItemsOpen : null
+            open ? styles.buttonLinkItemWithSubItemsOpen : ""
           }
           `}
           onClick={() => setOpen((current) => !current)}
@@ -72,7 +72,7 @@ const HeaderMenuItem: types.Brick<HeaderMenuItemProps> = ({
               viewBox='0 0 14 14'
               width='14px'
               height='14px'
-              className='inline-block w-[10px] h-[10px] ml-[5px]'
+              className={styles.svgClass}
             >
               <path
                 d='m7.35 2.9 5.5 5.5a.5.5 0 0 1-.7.7L7 3.96 1.85 9.1a.5.5 0 1 1-.7-.7l5.5-5.5c.2-.2.5-.2.7 0Z'
