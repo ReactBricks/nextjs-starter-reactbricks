@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.section {
+  background-color: white;
+}
+
+.sizeSmall {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.sizeNormal {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .sizeSmall {
+    margin-right: 16.66666%;
+    margin-left: 16.66666%;
+  }
+
+  .sizeNormal {
+    margin-right: 5.55555%;
+    margin-left: 5.55555%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .sizeSmall {
+    margin-right: 22.2222%;
+    margin-left: 22.2222%;
+  }
+  .sizeNormal {
+    margin-right: 11.1111%;
+    margin-left: 11.1111%;
+  }
+}

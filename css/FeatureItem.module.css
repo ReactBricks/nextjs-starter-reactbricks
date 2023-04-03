@@ -1,0 +1,110 @@
+.cols2,
+.cols3,
+.cols4 {
+  margin-bottom: 3rem;
+}
+
+.featureItemContainer {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.imageClassName {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+
+.imageWrapper {
+  float: left;
+  margin-right: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+.textFeatureItemContainer {
+  overflow: hidden;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: rgb(31 41 55);
+}
+
+.dark .title {
+  color: white;
+}
+
+.textColor {
+  color: rgb(107 114 128);
+}
+
+.linkContainer {
+  margin-top: 0.5rem;
+}
+
+.linkWrapper {
+  cursor: pointer;
+  color: rgb(14 165 233);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.linkWrapper:hover {
+  color: rgb(2 132 199);
+  transform: translateY(-1px);
+}
+
+.linkTextPlain1 {
+  display: flex;
+  align-items: center;
+}
+
+.linkTextPlain1 > :not([hidden]) ~ :not([hidden]) {
+  margin-left: 0.25rem;
+}
+
+.svgClass {
+  width: 10px;
+  height: 10px;
+}
+
+.linkTextPlain2 {
+  display: inline-block;
+}
+
+.linkTextPlain3 {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .cols2 {
+    flex: 0 1 45%;
+    margin-bottom: 4rem;
+  }
+
+  .cols3 {
+    flex: 0 1 27%;
+    margin-bottom: 4rem;
+  }
+
+  .cols4 {
+    flex: 0 1 45%;
+    margin-bottom: 4rem;
+  }
+
+  .imageWrapper {
+    float: none;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cols4 {
+    flex: 0 1 20%;
+  }
+}
