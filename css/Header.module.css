@@ -49,6 +49,9 @@
 .containerHamburgerMenu {
   position: relative;
   margin-left: auto;
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 .buttonHamburgerMenu {
@@ -84,14 +87,66 @@
   z-index: 10;
 }
 
+.darkModeButtonMobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.darkModeButtonDesktop {
+  display: none;
+}
+
+.darkModeButtonMobile,
+.darkModeButtonDesktop {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.dark .darkModeButtonMobile,
+.dark .darkModeButtonDesktop {
+  color: rgb(229 231 235);
+}
+
 @media (min-width: 640px) {
   .navClass {
     margin-left: 5.55555%;
     margin-right: 5.55555%;
   }
+
+  .darkModeButtonMobile,
+  .darkModeButtonDesktop {
+    margin-right: 0;
+    margin-left: 1rem;
+  }
+
+  .containerHamburgerMenu {
+    gap: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .darkModeButtonMobile,
+  .darkModeButtonDesktop {
+    margin-left: 2rem;
+    color: rgb(156 163 175);
+  }
 }
 
 @media (min-width: 1024px) {
+  .darkModeButtonMobile {
+    display: none;
+  }
+
+  .darkModeButtonDesktop {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .containerMenuItems {
     display: flex;
   }

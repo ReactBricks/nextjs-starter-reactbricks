@@ -273,3 +273,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 [hidden] {
   display: none;
 }
+
+.whiteContentClass {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+
+.darkContentClass {
+  background-color: rgb(17 24 39);
+}

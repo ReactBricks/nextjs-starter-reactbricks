@@ -1,5 +1,12 @@
-import React, { useState } from "react"
-import { Image, Repeater, types, Link } from "react-bricks/frontend"
+import React, { useContext, useState } from "react"
+import {
+  Image,
+  Repeater,
+  types,
+  Link,
+  ReactBricksContext,
+} from "react-bricks/frontend"
+import { BsMoonFill, BsSunFill } from "react-icons/bs"
 import { FiMenu, FiX } from "react-icons/fi"
 
 import styles from "../../../css/Header.module.css"
@@ -8,6 +15,7 @@ interface HeaderProps {}
 
 const Header: types.Brick<HeaderProps> = ({}) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { isDarkColorMode, toggleColorMode } = useContext(ReactBricksContext)
 
   return (
     <section>
@@ -31,7 +39,23 @@ const Header: types.Brick<HeaderProps> = ({}) => {
             )}
           />
         </div>
+
         <div className={styles.containerHamburgerMenu}>
+          {/* DARK MODE BUTTON MOBILE */}
+          <a
+            type='button'
+            className={styles.darkModeButtonMobile}
+            onClick={toggleColorMode}
+          >
+            {!isDarkColorMode ? (
+              <BsSunFill
+                style={{ fontSize: "1.25rem", lineHeight: "1.75rem" }}
+              />
+            ) : (
+              <BsMoonFill />
+            )}
+          </a>
+
           <button
             className={styles.buttonHamburgerMenu}
             onClick={() => setMobileMenuOpen((current) => !current)}
@@ -44,6 +68,19 @@ const Header: types.Brick<HeaderProps> = ({}) => {
             </div>
           )}
         </div>
+
+        {/* DARK MODE BUTTON DESKTOP */}
+        <a
+          type='button'
+          className={styles.darkModeButtonDesktop}
+          onClick={toggleColorMode}
+        >
+          {!isDarkColorMode ? (
+            <BsSunFill style={{ fontSize: "1.25rem", lineHeight: "1.75rem" }} />
+          ) : (
+            <BsMoonFill />
+          )}
+        </a>
       </nav>
     </section>
   )
