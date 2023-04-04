@@ -82,7 +82,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   let errorHeader: boolean = false
   let errorFooter: boolean = false
 
-  let cleanSlug
+  let cleanSlug = ""
 
   if (!slug) {
     cleanSlug = "/"
@@ -134,7 +134,7 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
         )
         .map((translation) => ({
           params: {
-            slug: [translation.slug],
+            slug: [...translation.slug.split("/")],
           },
           locale: translation.language,
         }))
