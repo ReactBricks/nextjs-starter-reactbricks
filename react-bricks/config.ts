@@ -22,7 +22,7 @@ const config: types.ReactBricksConfig = {
   playgroundPath: "/admin/playground",
   appSettingsPath: "/admin/app-settings",
   previewPath: "/preview",
-  getAdminMenu: () => [],
+  //getAdminMenu: () => [],
   isDarkColorMode: false,
   toggleColorMode: () => {},
   useCssInJs: false,
