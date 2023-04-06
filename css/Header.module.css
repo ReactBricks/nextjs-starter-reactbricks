@@ -82,8 +82,18 @@
   color: rgb(2 132 199);
 }
 
+:global(.dark) .buttonHamburgerMenu {
+  background-color: rgb(17 24 39);
+}
+
+:global(.dark) .buttonHamburgerMenu:hover {
+  background-color: rgb(14 165 233 / 0.4);
+  color: white;
+}
+
 :global(.dark) .buttonHamburgerMenu:focus {
-  color: rgb(56 189 248);
+  background-color: rgb(14 165 233 / 0.4);
+  color: white;
 }
 
 .containerHamburgerMenuItems {
@@ -101,6 +111,7 @@
 
 :global(.dark) .containerHamburgerMenuItems {
   background-color: rgb(17 24 39);
+  border-color: rgb(156 163 175);
 }
 
 .darkModeButtonMobile {
@@ -124,6 +135,22 @@
 :global(.dark) .darkModeButtonMobile,
 :global(.dark) .darkModeButtonDesktop {
   color: rgb(229 231 235);
+}
+
+.hamburgerMenuFiX {
+  color: rgb(75 85 99);
+}
+
+.hamburgerMenuFiMenu {
+  color: rgb(75 85 99);
+}
+
+:global(.dark) .hamburgerMenuFiX {
+  color: white;
+}
+
+:global(.dark) .hamburgerMenuFiMenu {
+  color: white;
 }
 
 @media (min-width: 640px) {

@@ -23,7 +23,8 @@
 }
 
 :global(.dark) .linkMenuItemActive {
-  color: rgb(56 189 248);
+  color: white;
+  background-color: rgb(14 165 233 / 0.3);
 }
 
 :global(.dark) .linkMenuItem {
@@ -36,7 +37,8 @@
 }
 
 :global(.dark) .linkMenuItem:hover {
-  color: rgb(56 189 248);
+  color: white;
+  background-color: rgb(14 165 233 / 0.4);
 }
 
 .linkHamburgerMenuItem {
@@ -55,7 +57,11 @@
 }
 
 .linkHamburgerMenuItem:hover {
-  color: rgb(2 132 199 / 0.2);
+  color: rgb(2 132 199);
+}
+
+:global(.dark) .linkHamburgerMenuItem:hover {
+  color: rgb(14 165 233);
 }
 
 .containerLinkItemWithSubItems {
@@ -94,7 +100,12 @@
 }
 
 :global(.dark) .buttonLinkItemWithSubItems:hover {
-  color: rgb(56 189 248);
+  color: white;
+  background-color: rgb(14 165 233 / 0.4);
+}
+:global(.dark) .buttonLinkItemWithSubItems:focus {
+  color: white;
+  background-color: rgb(14 165 233 / 0.4);
 }
 
 .buttonLinkItemWithSubItemsOpen {
@@ -136,6 +147,7 @@
 
 :global(.dark) .containerSubmenuItemsOpen {
   background-color: rgb(17 24 39);
+  border-color: rgb(156 163 175);
 }
 
 .containerSubmenuItems {
