@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import { types } from 'react-bricks/frontend'
+import Link from "next/link"
+import { useRouter } from "next/router"
+import { types } from "react-bricks/frontend"
 
 const NextLink: types.RenderLocalLink = ({
   href,
@@ -11,10 +11,10 @@ const NextLink: types.RenderLocalLink = ({
 }) => {
   const router = useRouter()
 
-  let anchorClassName = ''
+  let anchorClassName = ""
 
-  if (router.pathname === href) {
-    anchorClassName = activeClassName
+  if (router.asPath === href) {
+    anchorClassName = `${className} ${activeClassName}`
   } else {
     anchorClassName = className
   }
@@ -27,7 +27,7 @@ const NextLink: types.RenderLocalLink = ({
     )
   }
   return (
-    <Link href="/[slug]" as={href} className={anchorClassName}>
+    <Link href='/[[...slug]]' as={href} className={anchorClassName}>
       {children}
     </Link>
   )

@@ -18,7 +18,7 @@ const HeaderMenuItem: types.Brick<HeaderMenuItemProps> = ({
   isActive,
 }) => {
   const [open, setOpen] = useState(false)
-  const ref = useRef<HTMLButtonElement>(null)
+  const ref = useRef<HTMLDivElement>(null)
 
   useOnClickOutside(ref, () => setOpen(false))
 
@@ -45,9 +45,8 @@ const HeaderMenuItem: types.Brick<HeaderMenuItemProps> = ({
 
   return (
     <div>
-      <div className={styles.containerLinkItemWithSubItems}>
+      <div ref={ref} className={styles.containerLinkItemWithSubItems}>
         <button
-          ref={ref}
           className={`${styles.buttonLinkItemWithSubItems} ${
             open ? styles.buttonLinkItemWithSubItemsOpen : ""
           }
