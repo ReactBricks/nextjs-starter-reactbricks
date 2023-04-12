@@ -11,23 +11,15 @@ import { FiMenu, FiX } from "react-icons/fi"
 import useOnClickOutside from "./useClickOutside"
 
 import styles from "../../../css/Header.module.css"
-import { useTheme } from "next-themes"
 
 interface HeaderProps {}
 
 const Header: types.Brick<HeaderProps> = ({}) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const { resolvedTheme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
+  const { isDarkColorMode, toggleColorMode } = useContext(ReactBricksContext)
 
   const ref = useRef<HTMLDivElement>(null)
   useOnClickOutside(ref, () => setMobileMenuOpen(false))
-
-  if (!mounted) return <></>
 
   return (
     <section className={styles.section}>
@@ -57,11 +49,9 @@ const Header: types.Brick<HeaderProps> = ({}) => {
           <a
             type='button'
             className={styles.darkModeButtonMobile}
-            onClick={() => {
-              setTheme(resolvedTheme === "dark" ? "light" : "dark")
-            }}
+            onClick={toggleColorMode}
           >
-            {resolvedTheme === "light" ? (
+            {!isDarkColorMode ? (
               <BsSunFill
                 style={{ fontSize: "1.25rem", lineHeight: "1.75rem" }}
               />
@@ -91,11 +81,9 @@ const Header: types.Brick<HeaderProps> = ({}) => {
         <a
           type='button'
           className={styles.darkModeButtonDesktop}
-          onClick={() => {
-            setTheme(resolvedTheme === "dark" ? "light" : "dark")
-          }}
+          onClick={toggleColorMode}
         >
-          {resolvedTheme === "light" ? (
+          {!isDarkColorMode ? (
             <BsSunFill style={{ fontSize: "1.25rem", lineHeight: "1.75rem" }} />
           ) : (
             <BsMoonFill />
