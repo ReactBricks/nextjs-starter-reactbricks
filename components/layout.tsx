@@ -1,5 +1,4 @@
-import React, { ReactNode, useContext } from 'react'
-import { ReactBricksContext } from 'react-bricks/frontend'
+import React, { ReactNode } from 'react'
 import styles from '../css/layout.module.css'
 
 interface LayoutProps {
@@ -7,10 +6,9 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  const { isDarkColorMode } = useContext(ReactBricksContext)
   return (
     <div
-      className={`${isDarkColorMode ? 'dark' : 'light'} ${styles.container}`}
+      className={`${styles.container}`}
     >
       <main className={styles.childrenContainer}>{children}</main>
     </div>

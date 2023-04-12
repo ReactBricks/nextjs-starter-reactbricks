@@ -1,6 +1,7 @@
 import { ReactBricks } from "react-bricks/frontend"
 import type { AppProps } from "next/app"
 import config from "../react-bricks/config"
+import { ThemeProvider } from "next-themes"
 
 import "../css/style.css"
 import { useState } from "react"
@@ -27,7 +28,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
   return (
     <ReactBricks {...reactBricksConfig}>
-      <Component {...pageProps} />
+      <ThemeProvider attribute='class' storageKey='color-mode'>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </ReactBricks>
   )
 }
