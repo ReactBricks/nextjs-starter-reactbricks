@@ -6,7 +6,8 @@ import "../css/style.css"
 
 const MyApp = (props: AppProps) => {
   return (
-    <ThemeProvider attribute='class' storageKey='color-mode'>
+    <ThemeProvider attribute='class' storageKey='color-mode' enableSystem={false}
+      defaultTheme="light">
       <ReactBricksApp {...props}></ReactBricksApp>
     </ThemeProvider>
   )
