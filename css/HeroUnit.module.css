@@ -45,13 +45,6 @@
   color: rgb(255 255 255);
 }
 
-@media (min-width: 640px) {
-  .title {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-}
-
 .placeholderSpan {
   opacity: 0.3;
 }
@@ -81,4 +74,19 @@
 
 :global(.dark) .code {
   background-color: rgb(55 65 81);
+}
+
+.richTextLink {
+  color: rgb(14 165 233);
+}
+
+.richTextLink:hover {
+  color: rgb(2 132 199);
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }

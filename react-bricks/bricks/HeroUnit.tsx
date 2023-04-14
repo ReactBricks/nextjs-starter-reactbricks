@@ -52,6 +52,11 @@ const MyHeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
             renderCode={(props) => (
               <code className={styles.code}>{props.children}</code>
             )}
+            renderLink={(props) => (
+              <a href={props.href} className={styles.richTextLink}>
+                {props.children}
+              </a>
+            )}
           />
         </div>
       </div>
