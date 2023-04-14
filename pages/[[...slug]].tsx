@@ -4,16 +4,16 @@ import {
   fetchPages,
   cleanPage,
   types,
-} from "react-bricks/frontend"
-import { useReactBricksContext } from "react-bricks/frontend"
-import Head from "next/head"
-import { GetStaticProps, GetStaticPaths } from "next"
+} from 'react-bricks/frontend'
+import { useReactBricksContext } from 'react-bricks/frontend'
+import Head from 'next/head'
+import { GetStaticProps, GetStaticPaths } from 'next'
 
-import config from "../react-bricks/config"
-import Layout from "../components/layout"
-import ErrorNoHeader from "../components/errorNoHeader"
-import ErrorNoFooter from "../components/errorNoFooter"
-import ErrorNoKeys from "../components/errorNoKeys"
+import config from '../react-bricks/config'
+import Layout from '../components/layout'
+import ErrorNoHeader from '../components/errorNoHeader'
+import ErrorNoFooter from '../components/errorNoFooter'
+import ErrorNoKeys from '../components/errorNoKeys'
 
 interface PageProps {
   page: types.Page
@@ -47,7 +47,7 @@ const Page: React.FC<PageProps> = ({
         <>
           <Head>
             <title>{page.meta.title}</title>
-            <meta name='description' content={page.meta.description} />
+            <meta name="description" content={page.meta.description} />
           </Head>
           {headerOk && !errorHeader ? (
             <PageViewer page={headerOk} />
@@ -81,26 +81,28 @@ export const getStaticProps: GetStaticProps = async (context) => {
   let errorHeader: boolean = false
   let errorFooter: boolean = false
 
-  let cleanSlug = ""
+  let cleanSlug = ''
 
   if (!slug) {
-    cleanSlug = "/"
-  } else if (typeof slug === "string") {
+    cleanSlug = '/'
+  } else if (typeof slug === 'string') {
     cleanSlug = slug
   } else {
-    cleanSlug = slug.join("/")
+    cleanSlug = slug.join('/')
   }
 
   const [page, header, footer] = await Promise.all([
-    fetchPage(cleanSlug, config.apiKey, context.locale).catch(() => {
-      errorPage = true
-      return {}
-    }),
-    fetchPage("header", config.apiKey, context.locale).catch(() => {
+    fetchPage(cleanSlug, config.apiKey, context.locale, config.pageTypes).catch(
+      () => {
+        errorPage = true
+        return {}
+      }
+    ),
+    fetchPage('header', config.apiKey, context.locale).catch(() => {
       errorHeader = true
       return {}
     }),
-    fetchPage("footer", config.apiKey, context.locale).catch(() => {
+    fetchPage('footer', config.apiKey, context.locale).catch(() => {
       errorFooter = true
       return {}
     }),
@@ -133,7 +135,7 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
         )
         .map((translation) => ({
           params: {
-            slug: [...translation.slug.split("/")],
+            slug: [...translation.slug.split('/')],
           },
           locale: translation.language,
         }))
