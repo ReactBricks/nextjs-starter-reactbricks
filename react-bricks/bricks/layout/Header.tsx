@@ -1,11 +1,6 @@
-import React, { useContext, useEffect, useRef, useState } from "react"
-import {
-  Image,
-  Repeater,
-  types,
-  Link,
-  ReactBricksContext,
-} from "react-bricks/frontend"
+import React, { useRef, useState } from "react"
+import { Image, Repeater, types, Link } from "react-bricks/frontend"
+import { useReactBricksContext } from "react-bricks/frontend"
 import { BsMoonFill, BsSunFill } from "react-icons/bs"
 import { FiMenu, FiX } from "react-icons/fi"
 import useOnClickOutside from "./useClickOutside"
@@ -16,7 +11,7 @@ interface HeaderProps {}
 
 const Header: types.Brick<HeaderProps> = ({}) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const { isDarkColorMode, toggleColorMode } = useContext(ReactBricksContext)
+  const { isDarkColorMode, toggleColorMode } = useReactBricksContext()
 
   const ref = useRef<HTMLDivElement>(null)
   useOnClickOutside(ref, () => setMobileMenuOpen(false))
