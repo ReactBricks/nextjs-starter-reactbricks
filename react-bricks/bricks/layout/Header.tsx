@@ -42,7 +42,7 @@ const Header: types.Brick<HeaderProps> = ({}) => {
 
         <div className={styles.containerHamburgerMenu}>
           {/* DARK MODE BUTTON MOBILE */}
-          <a
+          <button
             type="button"
             className={styles.darkModeButtonMobile}
             onClick={toggleColorMode}
@@ -54,7 +54,7 @@ const Header: types.Brick<HeaderProps> = ({}) => {
             ) : (
               <BsMoonFill />
             )}
-          </a>
+          </button>
 
           <button
             className={styles.buttonHamburgerMenu}
@@ -80,7 +80,7 @@ const Header: types.Brick<HeaderProps> = ({}) => {
         </div>
 
         {/* DARK MODE BUTTON DESKTOP */}
-        <a
+        <button
           type="button"
           className={styles.darkModeButtonDesktop}
           onClick={toggleColorMode}
@@ -90,7 +90,7 @@ const Header: types.Brick<HeaderProps> = ({}) => {
           ) : (
             <BsMoonFill />
           )}
-        </a>
+        </button>
       </nav>
     </section>
   )
