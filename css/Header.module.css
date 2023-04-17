@@ -109,10 +109,10 @@
   z-index: 10;
 }
 
-:global(.dark) .containerHamburgerMenuItems {
+/*:global(.dark) .containerHamburgerMenuItems {
   background-color: rgb(17 24 39);
   border-color: rgb(156 163 175);
-}
+}*/
 
 .darkModeButtonMobile {
   display: flex;

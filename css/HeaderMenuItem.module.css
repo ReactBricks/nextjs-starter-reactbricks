@@ -52,17 +52,18 @@
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   color: rgb(31 41 55);
 }
-:global(.dark) .linkHamburgerMenuItem {
+
+/*:global(.dark) .linkHamburgerMenuItem {
   color: white;
-}
+}*/
 
 .linkHamburgerMenuItem:hover {
   color: rgb(2 132 199);
 }
 
-:global(.dark) .linkHamburgerMenuItem:hover {
+/*:global(.dark) .linkHamburgerMenuItem:hover {
   color: rgb(14 165 233);
-}
+}*/
 
 .containerLinkItemWithSubItems {
   display: none;
@@ -145,10 +146,10 @@
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-:global(.dark) .containerSubmenuItemsOpen {
+/*:global(.dark) .containerSubmenuItemsOpen {
   background-color: rgb(17 24 39);
   border-color: rgb(156 163 175);
-}
+}*/
 
 .containerSubmenuItems {
   margin-bottom: 1.5rem;
@@ -164,9 +165,9 @@
   margin-bottom: 1rem;
 }
 
-:global(.dark) .containerLinkText {
+/*:global(.dark) .containerLinkText {
   color: white;
-}
+}*/
 
 @media (min-width: 1024px) {
   .linkMenuItem {

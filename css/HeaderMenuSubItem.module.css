@@ -19,9 +19,9 @@
   color: rgb(2 132 199);
 }
 
-:global(.dark) .linkContainer:hover .linkText {
+/*:global(.dark) .linkContainer:hover .linkText {
   color: rgb(14 165 233);
-}
+}*/
 
 .linkText {
   color: rgb(17 24 39);
@@ -36,9 +36,9 @@
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-:global(.dark) .linkText {
+/*:global(.dark) .linkText {
   color: white;
-}
+}*/
 
 .descriptionContainer {
   display: none;
@@ -54,9 +54,9 @@
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-:global(.dark) .linkDescription {
+/*:global(.dark) .linkDescription {
   color: white;
-}
+}*/
 
 @media (min-width: 1024px) {
   .linkContainer {
