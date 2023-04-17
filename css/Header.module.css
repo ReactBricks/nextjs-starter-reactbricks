@@ -118,10 +118,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: transparent;
+  color: rgb(156 163 175);
 }
 
 .darkModeButtonDesktop {
   display: none;
+  background-color: transparent;
 }
 
 .darkModeButtonMobile,
