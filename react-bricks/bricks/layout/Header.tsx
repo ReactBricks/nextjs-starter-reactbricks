@@ -28,15 +28,18 @@ const Header: types.Brick<HeaderProps> = ({}) => {
           />
         </Link>
         <div className={styles.containerMenuItems}>
-          <Repeater propName="menuItems" />
+          <Repeater
+            propName="menuItems"
+            itemProps={{ mobileRef: ref, setMobileMenuOpen }}
+          />
         </div>
         <div className={styles.containerButtons}>
           <Repeater
             propName="buttons"
+            itemProps={{ simpleAnchorLink: true }}
             renderWrapper={(items) => (
               <div className={styles.buttonsWrapper}>{items}</div>
             )}
-            itemProps={{ mobileRef: ref, setMobileMenuOpen }}
           />
         </div>
 
@@ -48,7 +51,7 @@ const Header: types.Brick<HeaderProps> = ({}) => {
             onClick={toggleColorMode}
           >
             {!isDarkColorMode ? (
-               <BsMoonFill />
+              <BsMoonFill />
             ) : (
               <BsSunFill
                 style={{ fontSize: '1.25rem', lineHeight: '1.75rem' }}
