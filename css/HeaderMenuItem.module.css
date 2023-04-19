@@ -100,6 +100,11 @@
   color: rgb(2 132 199);
 }
 
+.buttonLinkItemWithSubItems:focus {
+  background-color: rgb(14 165 233 / 0.2);
+  color: rgb(2 132 199);
+}
+
 :global(.dark) .buttonLinkItemWithSubItems:hover {
   color: white;
   background-color: rgb(14 165 233 / 0.4);
