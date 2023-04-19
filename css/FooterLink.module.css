@@ -13,6 +13,6 @@
   transform: translateY(-1px);
 }
 
-:global(.dark) .text:hover {
+:global(.dark) .text {
   color: white;
 }

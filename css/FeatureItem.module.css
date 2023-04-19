@@ -40,6 +40,10 @@
   color: rgb(107 114 128);
 }
 
+:global(.dark) .textColor {
+  color: white;
+}
+
 .linkContainer {
   margin-top: 0.5rem;
 }
