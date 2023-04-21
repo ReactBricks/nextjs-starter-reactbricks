@@ -56,7 +56,6 @@
 
 .containerHamburgerMenu {
   position: relative;
-  margin-left: auto;
   display: flex;
   height: 100%;
   align-items: center;
@@ -109,34 +108,20 @@
   z-index: 10;
 }
 
-/*:global(.dark) .containerHamburgerMenuItems {
-  background-color: rgb(17 24 39);
-  border-color: rgb(156 163 175);
-}*/
-
-.darkModeButtonMobile {
+.darkModeButton {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  margin-left: auto;
+  cursor: pointer;
   background-color: transparent;
   color: rgb(156 163 175);
 }
 
-.darkModeButtonDesktop {
-  display: none;
-  background-color: transparent;
-}
-
-.darkModeButtonMobile,
-.darkModeButtonDesktop {
-  width: 2rem;
-  height: 2rem;
-  margin-right: 1rem;
-  cursor: pointer;
-}
-
-:global(.dark) .darkModeButtonMobile,
-:global(.dark) .darkModeButtonDesktop {
+:global(.dark) .darkModeButton {
   color: rgb(229 231 235);
 }
 
@@ -162,37 +147,15 @@
     margin-right: 5.55555%;
   }
 
-  .darkModeButtonMobile,
-  .darkModeButtonDesktop {
-    margin-right: 0;
-    margin-left: 1rem;
-  }
-
   .containerHamburgerMenu {
     gap: 10px;
   }
 }
 
-@media (min-width: 768px) {
-  .darkModeButtonMobile,
-  .darkModeButtonDesktop {
-    margin-left: 2rem;
-    color: rgb(156 163 175);
-  }
-}
-
 @media (min-width: 1024px) {
-  .darkModeButtonMobile {
-    display: none;
+  .darkModeButton{
+    margin-left: 2rem;
   }
-
-  .darkModeButtonDesktop {
-    display: flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .containerMenuItems {
     display: flex;
   }
