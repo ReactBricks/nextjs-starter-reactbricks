@@ -4,6 +4,7 @@ import { useReactBricksContext } from 'react-bricks/frontend'
 import { BsMoonFill, BsSunFill } from 'react-icons/bs'
 import { FiMenu, FiX } from 'react-icons/fi'
 import useOnClickOutside from './useClickOutside'
+import { useTheme } from 'next-themes'
 
 import styles from '../../../css/Header.module.css'
 
@@ -11,7 +12,8 @@ interface HeaderProps {}
 
 const Header: types.Brick<HeaderProps> = ({}) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const { isDarkColorMode, toggleColorMode } = useReactBricksContext()
+  const { toggleColorMode } = useReactBricksContext()
+  const { theme } = useTheme()
 
   const [mounted, setMounted] = useState(false)
 
@@ -56,7 +58,7 @@ const Header: types.Brick<HeaderProps> = ({}) => {
             className={styles.darkModeButton}
             onClick={toggleColorMode}
           >
-            {!isDarkColorMode ? (
+            {theme === 'light' ? (
               <BsMoonFill />
             ) : (
               <BsSunFill
