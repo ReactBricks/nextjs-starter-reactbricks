@@ -18,8 +18,11 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/jsonp": "^0.2.1",
     "@types/node": "^18.15.11",
+    "@types/prismjs": "^1.26.0",
     "@types/react": "^18.0.31",
+    "@types/react-slick": "^0.23.10",
     "typescript": "^5.0.2"
   }
 }
