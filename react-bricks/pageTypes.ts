@@ -1,16 +1,31 @@
-import { types } from "react-bricks/frontend"
+import { types } from 'react-bricks/frontend'
 
 const pageTypes: types.IPageType[] = [
   {
-    name: "page",
-    pluralName: "pages",
+    name: 'page',
+    pluralName: 'pages',
     defaultLocked: false,
     defaultStatus: types.PageStatus.Published,
     getDefaultContent: () => [],
   },
   {
-    name: "layout",
-    pluralName: "layout",
+    name: 'pokemon',
+    pluralName: 'pokemon',
+    getExternalData: (page) =>
+      fetch(`https://pokeapi.co/api/v2/pokemon/${page.slug}`)
+        .then((response) => response.json())
+        .then((data) => ({
+          ...data,
+          imageUrl: `https://img.pokemondb.net/artwork/large/${data.name}.jpg`,
+        }))
+        .catch((error) => {
+          console.log(error)
+          return {}
+        }),
+  },
+  {
+    name: 'layout',
+    pluralName: 'layout',
     defaultLocked: false,
     defaultStatus: types.PageStatus.Published,
     getDefaultContent: () => [],

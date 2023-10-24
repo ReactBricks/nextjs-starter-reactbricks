@@ -1,0 +1,28 @@
+.containerNotFound{
+	text-align: center;
+    color: rgb(239 68 68);
+    text-decoration-line: underline;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+}
+
+.container {
+    max-width: 48rem; /* 768px */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image{
+    margin-left: auto;
+    margin-right: auto;	
+    width: 9rem; /* 144px */
+    margin-bottom: 1rem; /* 16px */
+}
+
+.title{
+    font-size: 3rem; /* 48px */
+    line-height: 1;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1.5rem; /* 24px */
+}
