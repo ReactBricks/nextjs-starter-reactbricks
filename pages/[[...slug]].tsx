@@ -4,6 +4,8 @@ import {
   fetchPages,
   cleanPage,
   types,
+  renderMeta,
+  renderJsonLd,
 } from 'react-bricks/frontend'
 import { useReactBricksContext } from 'react-bricks/frontend'
 import Head from 'next/head'
@@ -46,8 +48,8 @@ const Page: React.FC<PageProps> = ({
       {pageOk && !errorPage && !errorNoKeys && (
         <>
           <Head>
-            <title>{page.meta.title}</title>
-            <meta name="description" content={page.meta.description} />
+            {renderMeta(pageOk)}
+            {renderJsonLd(pageOk)}
           </Head>
           {headerOk && !errorHeader ? (
             <PageViewer page={headerOk} showClickToEdit={false} />
