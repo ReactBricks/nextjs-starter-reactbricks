@@ -31,7 +31,7 @@ const pageTypes: types.IPageType[] = [
     defaultStatus: types.PageStatus.Published,
     getDefaultContent: () => [],
     isEntity: true,
-    excludedBlockTypes: ['pokemon'],
+    allowedBlockTypes: ['header', 'footer'],
   },
 ]
 
