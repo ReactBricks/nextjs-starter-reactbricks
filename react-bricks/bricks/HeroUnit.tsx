@@ -1,16 +1,16 @@
-import React from "react";
-import { Text, RichText, Image, types } from "react-bricks/frontend";
-import styles from "../../css/HeroUnit.module.css";
+import React from 'react'
+import { Text, RichText, Image, types } from 'react-bricks/frontend'
+import styles from '../../css/HeroUnit.module.css'
 
 //=============================
 // Local Types
 //=============================
-type Padding = "big" | "small";
+type Padding = 'big' | 'small'
 
 interface HeroUnitProps {
-  padding: Padding;
-  title: string;
-  text: string;
+  padding: Padding
+  title: string
+  text: string
 }
 
 //=============================
@@ -21,7 +21,7 @@ const MyHeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
     <div className={styles.container}>
       <div
         className={`${styles.padding} ${
-          padding === "big" ? styles.bigPadding : styles.smallPadding
+          padding === 'big' ? styles.bigPadding : styles.smallPadding
         }`}
       >
         <div>
@@ -56,7 +56,7 @@ const MyHeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
               <code className={styles.code}>{props.children}</code>
             )}
             renderLink={(props) => (
-              <a href={props.href} className={styles.richTextLink}>
+              <a href={props.href} target={props.target} rel={props.rel} className={styles.richTextLink}>
                 {props.children}
               </a>
             )}
@@ -64,34 +64,34 @@ const MyHeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 //=============================
 // Brick Schema
 //=============================
 MyHeroUnit.schema = {
-  name: "my-hero-unit",
-  label: "Custom Hero Unit",
+  name: 'my-hero-unit',
+  label: 'Custom Hero Unit',
   getDefaultProps: () => ({
-    padding: "big",
-    title: "This is a custom Hero Unit",
+    padding: 'big',
+    title: 'This is a custom Hero Unit',
     text: "We are a hi-tech web development company committed to deliver great products on time. We love to understand our customers' needs and exceed expectations.",
   }),
   sideEditProps: [
     {
-      name: "padding",
-      label: "Padding",
+      name: 'padding',
+      label: 'Padding',
       type: types.SideEditPropType.Select,
       selectOptions: {
         display: types.OptionsDisplay.Select,
         options: [
-          { value: "big", label: "Big Padding" },
-          { value: "small", label: "Small Padding" },
+          { value: 'big', label: 'Big Padding' },
+          { value: 'small', label: 'Small Padding' },
         ],
       },
     },
   ],
-};
+}
 
-export default MyHeroUnit;
+export default MyHeroUnit
