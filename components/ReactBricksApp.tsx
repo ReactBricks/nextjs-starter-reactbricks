@@ -1,8 +1,17 @@
 import { useEffect, useState } from 'react'
 import { ReactBricks } from 'react-bricks/frontend'
 import type { AppProps } from 'next/app'
+import { Nunito_Sans } from 'next/font/google'
 import config from '../react-bricks/config'
 import { useTheme } from 'next-themes'
+
+const nunito = Nunito_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['300', '400', '600', '700', '800', '900'],
+  style: ['normal', 'italic'],
+  variable: '--font-nunito',
+})
 
 const ReactBricksApp = ({ Component, pageProps }: AppProps) => {
   // Color Mode Management
@@ -24,7 +33,7 @@ const ReactBricksApp = ({ Component, pageProps }: AppProps) => {
     ...config,
     isDarkColorMode: colorMode === 'dark',
     toggleColorMode,
-    contentClassName: `${colorMode} ${
+    contentClassName: `${nunito.className} ${colorMode} ${
       colorMode === 'dark' ? 'dark darkContentClass' : 'light whiteContentClass'
     }`,
   }

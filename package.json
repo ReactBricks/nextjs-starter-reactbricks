@@ -10,20 +10,19 @@
     "start": "next start"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.17",
-    "next": "13.2.4",
-    "next-themes": "^0.2.1",
+    "next": "14.2.5",
+    "next-themes": "^0.3.0",
     "normalize.css": "^8.0.1",
-    "react": "^18.2.0",
-    "react-bricks": "^4.3.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.3.1",
+    "react-bricks": "^4.4.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/jsonp": "^0.2.1",
-    "@types/node": "^18.15.11",
-    "@types/prismjs": "^1.26.0",
-    "@types/react": "^18.0.31",
+    "@types/jsonp": "^0.2.3",
+    "@types/node": "^22.0.0",
+    "@types/prismjs": "^1.26.4",
+    "@types/react": "^18.3.3",
     "@types/react-slick": "^0.23.13",
-    "typescript": "^5.0.2"
+    "typescript": "^5.5.4"
   }
 }

@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap');
 *,
 ::before,
 ::after {
@@ -22,7 +21,6 @@ html {
   -o-tab-size: 4;
   tab-size: 4;
   /* 3 */
-  font-family: 'Nunito Sans', sans-serif;
 }
 
 body {
@@ -68,8 +66,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    'Liberation Mono', 'Courier New', monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
