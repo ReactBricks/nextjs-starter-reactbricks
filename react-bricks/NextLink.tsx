@@ -8,7 +8,6 @@ const NextLink: types.RenderLocalLink = ({
   rel,
   className,
   activeClassName,
-  isAdmin,
   children,
 }) => {
   const router = useRouter()
@@ -21,13 +20,6 @@ const NextLink: types.RenderLocalLink = ({
     anchorClassName = className
   }
 
-  if (isAdmin) {
-    return (
-      <Link href={href} target={target} rel={rel} className={anchorClassName}>
-        {children}
-      </Link>
-    )
-  }
   return (
     <Link href={href} target={target} rel={rel} className={anchorClassName}>
       {children}
